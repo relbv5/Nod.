@@ -1,3 +1,14 @@
 ion-content ion-toolbar {
   --background: translucent;
 }
+
+.menu-dropdown{
+background-color: white;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 2px 2px;
+    width: 150px;
+    height: auto;
+    position: relative;
+    left: 84%;
+  }

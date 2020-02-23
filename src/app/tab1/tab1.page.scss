@@ -1,3 +1,64 @@
-ion-content ion-toolbar {
-  --background: translucent;
+.card-background-page {
+ 
+  ion-card {
+    position: relative;
+    text-align: center;
+  }
+
+  .card-title {
+    position: absolute;
+    top: 36%;
+    font-size: 2.0em;
+    width: 100%;
+    font-weight: bold;
+    color:black;
+  }
+
+  .card-subtitle {
+    font-size: 1.0em;
+    position: absolute;
+    top: 52%;
+    width: 100%;
+    color:black;
+  }
+
+  .card-subtitle1 {
+    font-size: 1.0em;
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    color:black;
+  }
+
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
 }
+
+// @font-face {
+//   font-family:Raleway-Regular;
+//   font-style: regular;
+//   src: url("C:\Users\relbv5\Documents\myApp\src\assets\fonts\Raleway\Raleway-Regular.ttf")
+//   }
+
+/* raleway-regular - latin */
+// @font-face {
+//   font-family: 'Raleway';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: url('../fonts/raleway-v14-latin-regular.eot'); /* IE9 Compat Modes */
+//   src: local('Raleway'), local('Raleway-Regular'),
+//        url('../fonts/raleway-v14-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+//        url('../fonts/raleway-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+//        url('../fonts/raleway-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
+//        url('../fonts/raleway-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+//        url('../fonts/raleway-v14-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
+// }
+
+// .bg-img{
+//   background-image: url("../../assets/images/business-college-composition-desk-419635.jpg");
+//   background-size: cover;
+//   background-repeat: no-repeat; /* Do not repeat the image */
+//   height: 100%; /* You must set a specified height */
+// }

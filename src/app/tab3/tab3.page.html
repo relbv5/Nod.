@@ -1,17 +1,176 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="secondary">
+      <ion-searchbar value="Find a store"></ion-searchbar>
+    </ion-buttons>
+    <ion-buttons slot="primary">
+      <ion-button color="primary" (click)="isMenuOpen = !isMenuOpen">
+        <ion-icon slot="icon-only" ios="ellipsis-horizontal" md="ellipsis-vertical"></ion-icon>
+      </ion-button>
+
+    </ion-buttons>
+    <ion-title>NOD.</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<div *ngIf="isMenuOpen" class="menu-dropdown">
+  <ul>
+    <li>Profile</li>
+    <li>Request Report</li>
+    <li>Reward Scale</li>
+    <li>Partner Companies</li>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  </ul>
+</div>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>ADIDAS</ion-card-title>
+      <ion-card-subtitle>20% off sitewide sale!</ion-card-subtitle>
+      <img src="https://smbp.uwaterloo.ca/wp-content/uploads/2017/12/mygirls-SS15-A4-Landscape-WEBSITE2-1.jpg" width="600" height="400">
+    </ion-card-header>
+    <ion-card-content>
+      Limited time only, see what the buzz is about.
+    </ion-card-content>
+    <ion-footer>
+        <ion-row>
+          <ion-col center text-center>
+            <a [href]="'https://www.adidas.com/us'">
+              Visit site
+            </a>
+          </ion-col>
+          </ion-row>
+      </ion-footer>
+  </ion-card>
+
+
+  <ion-grid>
+
+    <ion-row>
+
+      <ion-col>
+          <ion-card>
+              <img src="https://1000logos.net/wp-content/uploads/2017/06/Target-Logo.png" alt="ion">
+              <ion-card-header>
+                  <ion-card-content>
+                      Save 25% on grocery items
+                    </ion-card-content>
+              </ion-card-header>
+
+              <ion-footer>
+                <ion-row>
+                  <ion-col center text-center>
+                      <a [href]="'https://www.target.com/'">
+                        Visit site
+                      </a>
+                  </ion-col>
+                  </ion-row>
+              </ion-footer>
+            </ion-card>
+      </ion-col>
+
+      <ion-col>
+          <ion-card>
+              <img src="https://1000logos.net/wp-content/uploads/2018/08/Sephora-Logo.png" alt="ion">
+              <ion-card-header>
+                <ion-card-title>Extra cashback for students</ion-card-title>
+              </ion-card-header>
+
+              <ion-footer>
+                <ion-row>
+                  <ion-col center text-center>
+                      <a [href]="'https://www.sephora.com/'">
+                        Visit site
+                      </a>
+                  </ion-col>
+                  </ion-row>
+              </ion-footer>
+            </ion-card>
+      </ion-col>
+
+      <ion-col>
+          <ion-card>
+              <img src="https://www.stickpng.com/assets/images/58428cc1a6515b1e0ad75ab1.png" alt="ion">
+              <ion-card-header>
+                <ion-card-title>Student membership</ion-card-title>
+              </ion-card-header>
+
+              <ion-footer>
+                <ion-row>
+                  <ion-col center text-center>
+                      <a [href]="'https://www.starbucks.com/'">
+                        Visit site
+                      </a>
+                  </ion-col>
+                  </ion-row>
+              </ion-footer>
+            </ion-card>
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row>
+
+        <ion-col>
+            <ion-card>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/H%26M-Logo.svg/709px-H%26M-Logo.svg.png" alt="ion">
+                <ion-card-header>
+                  <ion-card-title>Save 20% on select items</ion-card-title>
+                </ion-card-header>
+  
+                <ion-footer>
+                  <ion-row>
+                    <ion-col center text-center>
+                        <a [href]="'https://www2.hm.com/en_us/index.html'">
+                          Visit site
+                        </a>
+                    </ion-col>
+                    </ion-row>
+                </ion-footer>
+              </ion-card>
+        </ion-col>
+
+        <ion-col>
+            <ion-card>
+                <img src="https://cblproperty.blob.core.windows.net/production/assets/bltaf58e7cdc9d1fc72-Journeys_Logo.png" alt="ion">
+                <ion-card-header>
+                  <ion-card-title>Save $30 on first purchase</ion-card-title>
+                </ion-card-header>
+  
+                <ion-footer>
+                  <ion-row>
+                    <ion-col center text-center>
+                        <a [href]="'https://www.journeys.com/'">
+                          Visit site
+                        </a>
+                    </ion-col>
+                    </ion-row>
+                </ion-footer>
+              </ion-card>
+        </ion-col>
+
+        <ion-col>
+            <ion-card>
+                <img src="https://1000logos.net/wp-content/uploads/2017/11/Chipotle-Logo.png" alt="ion">
+                <ion-card-header>
+                  <ion-card-title>Free meal item</ion-card-title>
+                </ion-card-header>
+  
+                <ion-footer>
+                  <ion-row>
+                    <ion-col center text-center>
+                        <a [href]="'https://www.chipotle.com/'">
+                          Visit site
+                        </a>
+                    </ion-col>
+                    </ion-row>
+                </ion-footer>
+              </ion-card>
+        </ion-col>
+
+    </ion-row>
+  </ion-grid>
+
+
 </ion-content>
